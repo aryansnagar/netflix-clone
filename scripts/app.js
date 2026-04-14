@@ -177,7 +177,6 @@ class TVShowsApp {
     }
 }
 
-// Initialize app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     window.app = new TVShowsApp();
 });
