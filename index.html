@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows Explorer</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <!-- Login Modal -->
+    <div id="loginModal" class="login-modal">
+        <div class="login-card">
+            <h2>Welcome to TV Shows Explorer</h2>
+            <p>Guest login - No password required!</p>
+            <div class="input-group">
+                <input type="text" id="usernameInput" placeholder="Enter any username" maxlength="20">
+                <button id="guestLoginBtn" class="login-btn">Continue as Guest</button>
+            </div>
+            <p class="login-info">Your data is stored locally in your browser</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">📺 TV Shows</h1>
+                <div class="user-info" id="userInfo" style="display: none;">
+                    <span id="welcomeUser"></span>
+                    <button id="logoutBtn" class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Search -->
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search shows..." class="search-input">
+                    <button id="searchBtn" class="search-btn">Search</button>
+                </div>
+            </div>
+
+            <!-- Loading -->
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading shows...</p>
+            </div>
+
+            <!-- Shows Grid -->
+            <div id="showsGrid" class="shows-grid" style="display: none;"></div>
+
+            <!-- No Results -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <h3>No shows found</h3>
+                <p>Try adjusting your search terms</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
