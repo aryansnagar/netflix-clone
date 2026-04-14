@@ -172,12 +172,14 @@ body {
     border-radius: 10px;
     font-size: 16px;
     transition: all 0.3s;
+    background: #202020;
+    color: #fff;
 }
 
 .search-input:focus {
     outline: none;
     border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    /* box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); */
 }
 
 .search-btn {
@@ -222,7 +224,7 @@ body {
 /* Shows Grid */
 .shows-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
 }
 
